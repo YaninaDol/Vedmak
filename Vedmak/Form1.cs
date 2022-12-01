@@ -22,7 +22,7 @@ namespace Vedmak
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
             int x = 81;
             foreach (var item in Vedmak_dbo.Chapters)
             {
@@ -32,7 +32,7 @@ namespace Vedmak
                 button1.ForeColor = Color.Maroon;
                 button1.Click += Button1_Click;
                 button1.Size = new Size(179, 34);
-                button1.Font = new Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+                button1.Font = new Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 button1.Location = new Point(65, x);
                 this.panel1.Controls.Add(button1);
 
@@ -57,11 +57,12 @@ namespace Vedmak
                 DescriptionUserControl temp = new DescriptionUserControl(item.NAME.ToString(), item.PictureURL.ToString());
                 temp.Name = INDX.ToString();
                 temp.pictureBox1.Click += Temp_Click;
-                temp.pictureBox1.Name= item.ID.ToString();
+                temp.pictureBox1.Name = item.ID.ToString();
                 temp.Location = new Point(0, h);
                 this.panel2.Controls.Add(temp);
                 h += temp.Size.Height + 15;
             }
+            
         }
 
         private void Temp_Click(object sender, EventArgs e)

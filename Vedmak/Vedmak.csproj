@@ -55,8 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chapter.cs" />
-    <Compile Include="Controller.cs" />
+    <Compile Include="Model\Chapter.cs" />
+    <Compile Include="Controller\Controller.cs" />
     <Compile Include="DescriptionUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,8 +81,15 @@
     <Compile Include="HashUserControl.Designer.cs">
       <DependentUpon>HashUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs" />
-    <Compile Include="Personage.cs" />
+    <Compile Include="InfoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfoUserControl.Designer.cs">
+      <DependentUpon>InfoUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ListInfo.cs" />
+    <Compile Include="Controller\Model1.cs" />
+    <Compile Include="Model\Personage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DescriptionUserControl.resx">
@@ -96,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HashUserControl.resx">
       <DependentUpon>HashUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoUserControl.resx">
+      <DependentUpon>InfoUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

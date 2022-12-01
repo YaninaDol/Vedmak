@@ -9,12 +9,12 @@ namespace Vedmak
     public class Controller
     {
        public Model1 Model1;
-        public List<Personage> personages { get; set; }
+        public List<Personage> personageses { get; set; }
        
       Controller() {
             Model1 = new Model1();
-            personages = new List<Personage>();
-            personages.AddRange(Model1.Personages.ToList());
+            personageses = new List<Personage>();
+            personageses.AddRange(Model1.Personages.ToList());
         
         }
 

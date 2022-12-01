@@ -8,11 +8,12 @@ namespace Vedmak
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Model11")
+            : base("name=Model12")
         {
         }
 
         public virtual DbSet<Chapter> Chapters { get; set; }
+        public virtual DbSet<ListInfo> ListInfoes { get; set; }
         public virtual DbSet<Personage> Personages { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
